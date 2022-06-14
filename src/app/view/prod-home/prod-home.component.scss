@@ -1,0 +1,25 @@
+.headers{
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.sessao{
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  margin: 5px;
+}
+@media (max-width: 460px) {
+  .sessao{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .card{
+    width: 280px;
+    margin: 0;
+  }
+}

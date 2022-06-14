@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+  <a href="" class="navbar-brand logo">C.SHOP</a>
+  <div class="container">
+         <!-- Button NavBarCollapse -->
+         <button class="navbar-toggler ms-auto" type="button"
+         (click)="isMenuCollapsed = !isMenuCollapsed"
+         >
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!-- collapse -->
+  <div class="collapse navbar-collapse" style="transition: 0.7s;" [ngbCollapse]="isMenuCollapsed">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['']">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['produtos']">Produtos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['sobre']">Sobre</a>
+    </li>
+  </ul>
+</div>
+  </div>
+</nav>
